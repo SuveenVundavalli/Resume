@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Accordion - Collapse content</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion({
+                //
+                heightStyle: "content"
+            });
+            $( "#accordion" ).accordion({
+                collapsible: true
+            });
+            $(".ui-accordion-header").css("background","#28B463") ;
+
+            $(".ui-accordion-header.ui-state-active ").css("background","#28B463") ;
+        } );
+
+    </script>
+</head>
+<style>
+    details summary::-webkit-details-marker { display:none; }
+
+
+
+    body {
+        color: black;
+        background: #28B463;
+    }
+
+    #container {
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #28B463;
+        background: white;
+        /*
+        background: -webkit-linear-gradient(left top, #A9DFBF, #ccccff);
+        background: -o-linear-gradient(bottom right, #A9DFBF, #ccccff);
+        background: -moz-linear-gradient(bottom right, #A9DFBF, #ccccff);
+        background: linear-gradient(to bottom right, #A9DFBF, #28B463);
+        */
+    }
+
+    details summary {
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: #28B463;
+    }
+
+    a:active {
+        color: black;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    #t01 {
+        width: 100%;
+        border: 1px solid blue;
+        border-collapse: collapse;
+    }
+
+    #t01 td, #t01 th {
+        border: 1px solid #145A32;
+    }
+
+    table#t01 tr:nth-child(odd) {
+        background-color: #D5F5E3;
+    }
+
+    table#t01 tr:nth-child(even) {
+        background-color: #82E0AA;
+    }
+
+    table#t01 th {
+        background-color: #D5F5E3;
+    }
+
+    h2 {
+        background: #28B463;
+        padding-left: 15px;
+        color: white;
+    //text-align: center;
+    }
+</style>
+
+<body>
+<div id="container">
+    <h1>SUVEEN KUMAR VUNDAVALLI</h1>
+    <table>
+        <col width="25%">
+        <col width="5%">
+        <col width="50%">
+        <col width="20%">
+
+        <tr>
+            <td>Address</td>
+            <td>:</td>
+            <td>16-11-16/4/17, Sai Anurag Arcade, Ground Floor, Saleem
+                Nagar, Hyderabad, 500036</td>
+            <td rowspan="5"><img src="pic.png"></td>
+
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>:</td>
+            <td>+91 (0)8686242020</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><a href="mailto:suveenkumar.vundavalli@gmail.com">suveenkumar.vundavalli@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>LinkedIn</td>
+            <td>:</td>
+            <td><a href="https://se.linkedin.com/in/svundavalli"
+                   target="_blank">https://se.linkedin.com/in/svundavalli</a></td>
+        </tr>
+        <tr>
+            <td>Github</td>
+            <td>:</td>
+            <td><a href="https://github.com/suveenkumarchowdary"
+                   target="_blank">https://github.com/suveenkumarchowdary</a></td>
+        </tr>
+    </table>
+
+    <div id="accordion">
+    <h2>Career Objective</h2>
+    <div>
+    <p>Seeking for a job to pursue a highly rewarding career and
+        healthy work environment where I can utilize my skills and knowledge
+        efficiently for the organizational and personal growth.</p>
+    </div>
+
+    <h2>Educational Profile</h2>
+    <div>
+        <table id="t01">
+        <tr>
+            <th>Qualification</th>
+            <th>College / University</th>
+            <th>Board</th>
+            <th>Year of Passing</th>
+            <th>Aggregate</th>
+        </tr>
+        <tr>
+            <td>MS (Signal Processing)</td>
+            <td>Blekinge Institute of Technology, Sweden</td>
+            <td>EU</td>
+            <td>2016</td>
+            <td>B Grade</td>
+        </tr>
+        <tr>
+            <td>B. Tech</td>
+            <td>University College of Engineering, Kakinada</td>
+            <td>JNTUK</td>
+            <td>2015</td>
+            <td>62%</td>
+        </tr>
+        <tr>
+            <td>Intermediate</td>
+            <td>Aditya Junior College</td>
+            <td>BIEAP</td>
+            <td>2011</td>
+            <td>87.4%</td>
+        </tr>
+        <tr>
+            <td>SSC</td>
+            <td>Sri Prakash Synergy School</td>
+            <td>State</td>
+            <td>2009</td>
+            <td>78.3%</td>
+        </tr>
+    </table>
+    </div>
+    <h2>Technical Skills</h2>
+    <div>
+        <p align="center">(Scale 5-Excellent, 4-Advanced, 3-Good,
+            2-Intermediate, 1-Basic)</p>
+        <table>
+            <col width="100">
+            <col width="20">
+            <col width="300">
+            <tr>
+                <td>Languages</td>
+                <td>:</td>
+                <td>Matlab (3/5), C (3/5), C++ (3/5), Java (2/5)</td>
+            </tr>
+            <tr>
+                <td>Web Technologies</td>
+                <td>:</td>
+                <td>HTML (3/5), CSS (3/5), JavaScript (2/5), AngularJS (3/5),
+                    JQuery (3/5)</td>
+            </tr>
+            <tr>
+                <td>Operating Systems</td>
+                <td>:</td>
+                <td>Mac (3/5), Windows (3/5), Android (3/5), IOS (3/5), Linux
+                    (2/5)</td>
+            </tr>
+            <tr>
+                <td>Software Development, Team Work Methods</td>
+                <td>:</td>
+                <td>Scrum, Git</td>
+            </tr>
+            <tr>
+                <td>Additional Tools</td>
+                <td>:</td>
+                <td>Microsoft office tools, Photoshop Lightroom, LaTeX</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Notable Activities</h2>
+    <div>
+        <ul>
+        <li>Student website developer for Indian Organization Blekinge (<a
+                href="http://www.ioblekinge.se" target="_blank">ioblekinge.se</a>)
+        </li>
+        <li>Interested in exploring new technologies with an ability to
+            learn and adapt.</li>
+        <li>Completed “Software Craftsmanship Training” at Softhouse,
+            Sweden.</li>
+    </ul>
+    </div>
+
+    <h2>Academic Projects</h2>
+    <div>
+        <ul>
+            <li>Bird Chirp Annotation using Time-Frequency Domain Analysis,
+                2016</li>
+            <li>Image Restoration and Enhancement, 2015-2016</li>
+            <li>Sound Source Localization, 2015</li>
+            <li>Vehicle Speed Limit Extraction, 2015</li>
+            <li>Music Instrument Identification, 2015</li>
+        </ul>
+    </div>
+
+    <h2>Internships</h2>
+    <div>
+        <ul>
+        <li>Software Craftsmanship, Karlskrona, Sweden, 2016</li>
+        <li>Internshipon Telecommunication Networking at Visakhapatnam
+            Steel Plant, Visakhapatnam, India 2015</li>
+    </ul>
+    </div>
+
+
+    <h2>Personal Profile</h2>
+    <div>
+        <table>
+        <col width="100">
+        <col width="20">
+        <col width="300">
+        <tr>
+            <td>Date of birth</td>
+            <td>:</td>
+            <td>5<sup>th</sup>-June-1994
+            </td>
+        </tr>
+        <tr>
+            <td>Father name</td>
+            <td>:</td>
+            <td>Satyanarayana Vundavalli</td>
+        </tr>
+        <tr>
+            <td>Mother Name</td>
+            <td>:</td>
+            <td>Sri Rama Vundavalli</td>
+        </tr>
+        <tr>
+            <td>Nationality</td>
+            <td>:</td>
+            <td>Indian</td>
+        </tr>
+        <tr>
+            <td>Marital status</td>
+            <td>:</td>
+            <td>Single</td>
+        </tr>
+        <tr>
+            <td>Interested in</td>
+            <td>:</td>
+            <td>Photography, Video Editing</td>
+        </tr>
+    </table>
+    </div>
+
+    <h2>Languages Known</h2>
+    <div>
+        <table>
+        <col width="100">
+        <col width="20">
+        <col width="300">
+        <tr>
+            <td>Telugu</td>
+            <td>:</td>
+            <td>Mother tongue</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>:</td>
+            <td>Proficient</td>
+        </tr>
+        <tr>
+            <td>Hindi</td>
+            <td>:</td>
+            <td>Manageable</td>
+        </tr>
+        <tr>
+            <td>Swedish</td>
+            <td>:</td>
+            <td>Beginner</td>
+        </tr>
+    </table>
+    </div>
+
+    <h2>Declaration</h2>
+    <div>
+        <p>I here by declare that the above furnished details are true to
+            the best of my knowledge.</p>
+        <p>*References will be provided upon request.</p>
+    </div>
+</div>
+
+    <table>
+        <col width="75%">
+        <col width="25%">
+        <tr>
+            <td>Place : Hyderabad</td>
+            <td rowspan="2"><b>Suveen Kumar Vundavalli</b></td>
+        </tr>
+        <tr>
+            <td>Date : 23<sup>rd</sup>-March-2017
+            </td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button.accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        button.accordion.active, button.accordion:hover {
+            background-color: #ddd;
+        }
+
+        div.panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
+-->
