@@ -7,109 +7,16 @@
     <title>Resume JQuery</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/MyStyle.css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/MyStyle.js"></script>
     <!--
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   -->
-    <script>
-        $(function() {
-            $("#accordion").accordion({
-                heightStyle: "content"
-            });
-            $("#accordion").accordion({
-                collapsible: true
-            });
-            $(".ui-accordion-header").css("background", "#28B463");
-
-            $(".ui-accordion-header.ui-state-active ").css("background", "#28B463");
-        });
-
-    </script>
 </head>
-<style>
-    details summary::-webkit-details-marker {
-        display: none;
-    }
-    
-    body {
-        color: black;
-        background: #28B463;
-    }
-    
-    #container {
-        margin: 10px;
-        padding: 20px;
-        border: 1px solid #28B463;
-        background: white;
-        /*
-        background: -webkit-linear-gradient(left top, #A9DFBF, #ccccff);
-        background: -o-linear-gradient(bottom right, #A9DFBF, #ccccff);
-        background: -moz-linear-gradient(bottom right, #A9DFBF, #ccccff);
-        background: linear-gradient(to bottom right, #A9DFBF, #28B463);
-        */
-    }
-    
-    details summary {
-        cursor: pointer;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    a:link {
-        color: black;
-    }
-    
-    a:visited {
-        color: black;
-    }
-    
-    a:hover {
-        color: #28B463;
-    }
-    
-    a:active {
-        color: black;
-    }
-    
-    table {
-        width: 100%;
-    }
-    
-    #t01 {
-        width: 100%;
-        border: 1px solid blue;
-        border-collapse: collapse;
-    }
-    
-    #t01 td,
-    #t01 th {
-        border: 1px solid #145A32;
-    }
-    
-    table#t01 tr:nth-child(odd) {
-        background-color: #D5F5E3;
-    }
-    
-    table#t01 tr:nth-child(even) {
-        background-color: #82E0AA;
-    }
-    
-    table#t01 th {
-        background-color: #D5F5E3;
-    }
-    
-    h2 {
-        background: #28B463;
-        padding-left: 15px;
-        color: white;
-        //text-align: center;
-    }
 
-</style>
 
 <body>
     <div id="container">
